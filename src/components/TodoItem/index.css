@@ -1,0 +1,18 @@
+/* Write your CSS here */
+.todo-item-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-name {
+  color: #000000;
+  font-size: 30px;
+}
+
+.button {
+  padding: 10px;
+  font-size: 20px;
+}
