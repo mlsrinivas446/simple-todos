@@ -1,18 +1,82 @@
-/* Write your CSS here */
 .todo-item-container {
-  width: 70vw;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff5e1;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.todo-item-container:hover {
+  background-color: #ffe8d1;
+}
+
+.todo-details {
+  display: flex;
   align-items: center;
 }
 
+.todo-edit-input {
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
 .title-name {
-  color: #000000;
-  font-size: 30px;
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.title-name.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
 }
 
 .button {
-  padding: 10px;
-  font-size: 20px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.save-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.edit-button {
+  background-color: #ffa726;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #fb8c00;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
 }
